@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Parcel App</title>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header first_page">
+            <div class="content">
+                <h1 class="header_title">envelo</h1>
+                <p class="header_info">Możesz mieć swoją przesyłkę w kilkanaście sekund.</p>
+                <p class="header_info">Rozpocznij klikając w przycisk.</p>
+                <button class="btn btn_start">Odbierz paczkę</button>
+            </div>
+        </div>
+        <div class="header second_page">
+            <h1 class="header_title">envelo</h1>
+            <p class="header_info">Możesz mieć swoją przesyłkę w kilkanaście sekund.</p>
+            <p class="header_info">Rozpocznij klikając w przycisk.</p>
+            <div class="content">
+                <div class="auth">
+                    <div class="auth_form auth_number">
+                        <label class="auth_label" for="phone">Numer telefonu</label>
+                        <input class="auth_input auth_input_number" type="text" id='phone' maxlength="9">
+                        <p class="error error_number"></p>
+                    </div>
+                    <div class="auth_form auth_code">
+                        <label class="auth_label" for="code">Kod odbioru</label>
+                        <input class="auth_input auth_input_code" type="text" id='code' maxlength="4">
+                        <p class="error error_code"></p>
+                    </div>
+                </div>
+                <button class="btn btn_form">Odbierz paczkę</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal_shadow">
+        <div class="modal">
+            <h2 class="modal_title">Paczka odebrana!</h2>
+            <p class="modal_text">Zrobiłeś to w czasie 10 sekund!<br>Czy możemy zrobić dla Ciebie coś jeszcze?</br></p>
+            <button class="btn btn_close btn_close">To wszystko na<br>dziś</br></button>
+            <button class="btn btn_close btn_next">Odbierz kolejną<br>paczkę</br></button>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>

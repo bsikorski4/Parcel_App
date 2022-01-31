@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+        :root {
+            --bg-color: red;
+        }
+
+        body {
+            backgroundColor: var(bg-color);
+            font-family: Lato;
+            /* Brak importu dla fonta */
+            /* font-family: + 'sans-serif'; */
+
+        }
+
+        div {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero {
+            border: 1px solid black;
+        }
+    </style>
+
+    <!--Stylowanie powinno być w pilku CSS + Brak resetu -->
+
+
+</head>
+
+<body>
+    <h1 aria-main='true'>Hall of fame</h1>
+    <!-- nie znany atrybut aria-main -->
+
+
+
+    <div className="hero">
+        <!-- className to zapis poprawny w JSX, w HTML powinno być class=" " -->
+
+        <h1>Hero count: {heroCount}</h1>
+        <!-- w dokumencie nie mogą znajdowac się dwa nagłówki 'h1' -->
+
+    </div>>
+    <!-- zbędny nawias ">" -->
+
+    <button onclick="Hero.train()">Power Up Hero</button>
+
+    <script></script>
+
+    <!-- brak src<script src=" "></script> -->
+</body>
+
+</html>
